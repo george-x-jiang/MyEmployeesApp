@@ -1,0 +1,14 @@
+<div class="employee-detail" *ngIf="employee">
+  <img class="employee-photo" alt="avatar" [src]="employee.avatar"/>
+  <h3 class="employee-name">{{employee.firstName}} {{employee.lastName}}</h3>
+  <div class="clear-both"></div>
+  <div class="detail-container">
+    <div class="job-title">
+      <h4 class="employee-title">{{employee.jobTitle}}</h4>
+      <p class="employee-title">Age: {{employee.age}}</p>
+      <p class="employee-title">Joined: {{dateJoined}}</p>
+    </div>
+
+    <p class="detail-bio">{{employee.bio}}</p>
+  </div>
+</div>

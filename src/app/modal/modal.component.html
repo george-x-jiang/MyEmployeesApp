@@ -1,0 +1,6 @@
+<div class="backdrop" [ngStyle]="backdropStyle" *ngIf="show">
+  <div class="modal" [ngStyle]="modalStyle">
+    <img src="/assets/close-icon.png" alt="X" [ngStyle]="closeIconStyle" (click)="onClose()" />
+    <ng-content></ng-content>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<section class="employee-grid">
+  <h1>Our Employees</h1>
+  <hr/>
+
+  <div class="employee-block" *ngFor="let employee of employees" (click)="openModal(employee)">
+    <img class="employee-avartar" alt="avatar"
+         [src]="employee.avatar"/>
+    <div class="employee-info">
+      <h3>{{employee.firstName}} {{employee.lastName}}</h3>
+      <p>{{employee.bio}}</p>
+    </div>
+  </div>
+
+  <app-modal [show]="!!selectedEmployee" (closeModal)="closeModal()">
+    <app-employee-detail [employee]="selectedEmployee"></app-employee-detail>
+  </app-modal>
+</section>
