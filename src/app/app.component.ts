@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
-const companyDataUrl = '/assets/sample-data.json';
+import { CompanyInfoService } from './service/company-info.service';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +8,12 @@ const companyDataUrl = '/assets/sample-data.json';
 export class AppComponent implements OnInit {
   companyInfo: any = {};
 
-  constructor(private http: HttpClient) {}
+  constructor(private service: CompanyInfoService) {}
 
   ngOnInit() {
-    this.http.get(companyDataUrl).subscribe(data => {
+    this.service.getCompanyInfo().subscribe(data => {
       // Read the result field from the JSON response.
-      this.companyInfo = data['companyInfo'];
+      this.companyInfo = data;
     });
   }
 

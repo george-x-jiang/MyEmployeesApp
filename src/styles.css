@@ -46,7 +46,7 @@ header {
 
 .employee-info {
     box-sizing: border-box;
-    margin: 0px;
+    margin: 0;
     width: 245px;
     max-height: 152px;
     float: right;
