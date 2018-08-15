@@ -20,7 +20,8 @@ header {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 1276px;
+    width: 85%;
+    box-sizing: border-box;
 }
 
 .employee-grid h1 {
