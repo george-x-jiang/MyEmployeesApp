@@ -1,13 +1,15 @@
-<section class="employee-grid">
+<section class="employees-section">
   <h1>Our Employees</h1>
   <hr/>
 
-  <div class="employee-block" *ngFor="let employee of employees" (click)="openModal(employee)">
-    <img class="employee-avartar" alt="avatar"
-         [src]="employee.avatar"/>
-    <div class="employee-info">
-      <h3>{{employee.firstName}} {{employee.lastName}}</h3>
-      <p>{{employee.bio}}</p>
+  <div class="employee-container">
+    <div class="employee-block" *ngFor="let employee of employees" (click)="openModal(employee)">
+      <img class="employee-avartar" alt="avatar"
+           [src]="employee.avatar"/>
+      <div class="employee-info">
+        <h3>{{employee.firstName}} {{employee.lastName}}</h3>
+        <p>{{employee.bio}}</p>
+      </div>
     </div>
   </div>
 
