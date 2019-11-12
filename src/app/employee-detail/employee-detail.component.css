@@ -1,0 +1,44 @@
+.employee-detail {
+  box-sizing: border-box;
+  margin: 0;
+  border: solid 1px;
+  padding: 0;
+  width: 100%;
+  min-height: 350px;
+}
+
+.employee-photo {
+  border: solid 1px;
+  width: 145px;
+  height: 152px;
+}
+
+.employee-name {
+  display: inline;
+  margin-left: 30px;
+}
+
+.employee-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.detail-container {
+  margin: 15px 0 0 0;
+  border: 0;
+  /*padding: 0;*/
+  width: 100%;
+}
+
+div.job-title {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 145px;
+  float: left;
+}
+
+p.detail-bio {
+  max-width: 370px;
+  margin: 10px 0 0 0;
+  float: right;
+}

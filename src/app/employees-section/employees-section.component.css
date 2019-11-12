@@ -1,0 +1,50 @@
+.employees-section {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1276px;
+}
+
+.employees-section h1 {
+  font-size: 1.3em;
+}
+
+.employees-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.employee-block {
+  margin: 10px;
+  border: solid 1px;
+  padding: 0;
+//display: inline-block;
+  width: 400px;
+}
+
+.employee-avartar {
+  display: block;
+  box-sizing: border-box;
+  border: solid 1px;
+  width: 145px;
+  height: 152px;
+  float: left;
+}
+
+.employee-info {
+  box-sizing: border-box;
+  margin: 0;
+  width: 245px;
+  max-height: 152px;
+  float: right;
+  overflow: hidden;
+}
+
+.employee-info h3:hover {
+  cursor: pointer;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}

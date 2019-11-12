@@ -3,7 +3,8 @@ import { CompanyInfoService } from '../service/company-info.service';
 
 @Component({
   selector: 'app-employees-section',
-  templateUrl: './employees-section.component.html'
+  templateUrl: './employees-section.component.html',
+  styleUrls: ['./employees-section.component.css']
 })
 export class EmployeesSectionComponent implements OnInit {
 
