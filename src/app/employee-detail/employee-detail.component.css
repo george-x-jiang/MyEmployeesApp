@@ -1,3 +1,8 @@
+div.heading-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .employee-detail {
   box-sizing: border-box;
   margin: 0;
@@ -9,13 +14,13 @@
 
 .employee-photo {
   border: solid 1px;
-  width: 145px;
+  flex-basis: 145px;
+  margin-right: 25px;
   height: 152px;
 }
 
 .employee-name {
-  display: inline;
-  margin-left: 30px;
+  margin-left: 5px;
 }
 
 .employee-title {
@@ -28,17 +33,20 @@ div.detail-container {
   border: 0;
   /*padding: 0;*/
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 div.job-title {
   box-sizing: border-box;
   padding: 5px;
-  width: 145px;
-  float: left;
+  flex-basis: 145px;
+  flex-shrink: 0;
+  margin-right: 25px;
 }
 
 p.detail-bio {
-  max-width: 370px;
-  margin: 10px 0 0 0;
-  float: right;
+  flex-basis: 165px;
+  flex-grow: 1;
+  margin: 10px 0 0 5px;
 }
